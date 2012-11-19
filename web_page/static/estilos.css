@@ -1,0 +1,236 @@
+body{
+	background-color: #fff;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: top;
+	background: transparent;
+}
+body {
+	line-height: 1;
+	background-color: white;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+ 
+/* remember to define focus styles! */
+:focus {
+	outline: 0;
+}
+ 
+/* remember to highlight inserts somehow! */
+ins {
+	text-decoration: none;
+}
+del {
+	text-decoration: line-through;
+}
+ 
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*******************************************/
+#envoltura-header{
+	width: 100%;
+	height: auto;
+}
+
+#header {
+	background-color: #88ff33;
+	border: 2px solid gray;
+	height: auto;
+	width: 960px;
+	margin:  0 auto;
+	padding: 3px 3px;
+}
+
+	#header-logo{
+		display: inline-block;
+	}
+		#header-logo img{
+			height: 100px;
+			width: 100px;
+			background-color: #ff0000;
+			display: inline-block;
+		}
+
+	#header-menu-search{
+		display: inline-block;
+		box-align: end;
+		-webkit-box-align: end;
+		-moz-box-align: end;
+	}
+		#envoltura-buscador{
+			padding: 3px 3px 3px 3px ;
+			display: inline-block;
+		}
+
+			#buscador{
+				/*display: inline-block;*/
+			}
+
+		#menu-pagina{
+			padding: 3px 3px 3px 3px ;
+		}
+
+			#menu-pagina ul li{
+				display: inline;
+				font-size: 22px;
+				font-family: arial;
+				list-style-type: none;
+			}
+
+			#menu-pagina ul li a{
+				font:   bold 1em arial;
+				text-decoration: none ;
+				text-transform: uppercase;
+				color: black;
+			}
+
+#content{
+	width: 100%;
+	height: auto;	
+}
+
+	#content-in {
+		height: auto;
+		width: 960px;
+		background-color: #555588;
+		margin: 0 auto;
+	}
+
+		#content-in-sup{
+			background-color: #ccc;
+		}
+		
+			#wraper-menu h3{
+				font-size: large;
+				color: blue;
+			}
+		
+			#content-in-sup h3{
+				font-family: verdana, arial;
+				font-size: 18px;
+				display: inline-block;
+			}
+
+			#content-menu{
+				margin: 2px auto;
+				border: 1px solid green;				
+				display: inline-block;
+			}
+			
+
+			#content-menu ul{
+				padding: 2px 2px				
+			}
+				#content-menu ul li{
+					background-color: yellow;
+					border-radius: 5px 5px 0 0;
+					display: inline-block;
+					font-family: arial;
+					font-size: 15px;
+					font-style: normal;
+					height: 20px;
+					margin: 5px 1px;
+					text-align: center;
+					width: 50px;
+				}
+		#content-in-med{
+			background-color: #fff;
+		}
+
+			#left-sidebar{
+				border: 1px solid black;
+				display: inline-block;
+				width: 15%;
+				margin: 0;
+			}
+				#left-sidebar ul{
+					display: inline-block;
+					padding: 1.7em 0 1.7em 0.2em;
+				}
+				#left-sidebar ul li{
+					list-style-type: none;					
+					background: -webkit-linear-gradient(top, #1e5799 0%,#2989d8 50%,#207cca 51%,#7db9e8 100%);
+					background: -moz-linear-gradient(top, #1e5799 0%,#2989d8 50%,#207cca 51%,#7db9e8 100%);
+					background: -o-linear-gradient(top, #1e5799 0%,#2989d8 50%,#207cca 51%,#7db9e8 100%);
+					background: -ms-linear-gradient(top, #1e5799 0%,#2989d8 50%,#207cca 51%,#7db9e8 100%);
+					margin-top: -10px;
+					padding: 10px 5px;
+					width: 85px;
+					position: relative;
+					border: 1px solid black;
+					border-radius: 10px 0;
+					box-shadow: -3px -3px 1px #aaa;
+					opacity: 0.8;
+					transform: skew(-6deg,-15deg);
+					-ms-transform: skew(-6deg,-15deg); 
+					-webkit-transform: skew(-6deg,-15deg); 
+					-o-transform: skew(-6deg,-15deg);
+					-moz-transform: skewX(-6deg) skewY(-15deg);
+				}
+
+				#left-sidebar ul li:hover{
+					font: bold 1em arial;
+					text-shadow: -1px -1px 2px #000;
+					-webkit-text-shadow: -1px -1px 2px #000;
+					-moz-text-shadow: -1px -1px 2px #000;
+					-o-text-shadow: -1px -1px 2px #000;
+					-ms-text-shadow: -1px -1px 2px #000;
+					opacity: 1;
+					margin-top: -20px;
+					margin-bottom: 10px;
+				}
+
+				#left-sidebar ul li a{
+					font: bold 1em arial;
+					text-decoration: none;
+					width: 100%;
+					height: 100%;
+					color: white;
+				}
+				#left-sidebar ul li a:hover{
+					text-shadow: -1px -1px 2px #000;
+				}
+
+				
+			#center-content{
+				width: 68%;
+				margin: 0;
+				display:inline-block;
+			}
+			#right-sidebar{
+				margin: 0;			
+				width: 15%;
+				display:inline-block;
+			}
+
+footer {
+	width: 960px;
+	margin: 0 auto;
+}
