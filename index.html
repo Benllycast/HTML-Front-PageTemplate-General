@@ -1,29 +1,53 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<!-- ========================== metas de contenido y codigficacion ==============================-->
 		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		
+		
+		<!-- ========================== script de boilerplate ==============================-->
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-		<meta property="og:title" content="Portfolio Benlly cast, Developer multilanguaje" />
+		<!-- ========================== Descripcion de La pagina ==============================-->
+		<title>Benllycas | Developer multilanguaje</title>
+        <meta name="description" content="">
+        <!--
+		<meta name="description" content="I design beautiful Websites, User Interfaces, Apps and much more. I live for practical but enganging design.">
+		<meta name="keywords" content="ui, ux, user interface designer, user interface, user experience, user experience designer, web design, web designer, front end development, development, mobile, web applications, designer, graphic designer, information architext, interactive designer, bournemouth, dorset, united kingdom">
+		<meta name="author" content="Benlly cast">
+		-->
+
+		<!-- ========================== Etiquetas de resposive web desing ==============================-->
+        <!--<meta name="viewport" content="width=device-width">-->
+        <!--<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+
+        
+        <!-- ========================== script de Open Graf Protocol (Social Media) ==============================-->
+        <!--
+        <meta property="fb:admins" content="282255378537818" />
+        <meta property="og:title" content="Portfolio Benlly cast, Developer multilanguaje" />
 		<meta property="og:type" content="website" />
 		<meta property="og:url" content="http://benllycast.99h.com.ar" />
 		<meta property="og:site_name" content="benllycast | Portfolio Benlly cast, Developer multilanguaje" />
-		<!--<meta property="fb:admins" content="282255378537818" />-->
-
-		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
-		<!--<meta name="description" content="I design beautiful Websites, User Interfaces, Apps and much more. I live for practical but enganging design.">
-		<meta name="keywords" content="ui, ux, user interface designer, user interface, user experience, user experience designer, web design, web designer, front end development, development, mobile, web applications, designer, graphic designer, information architext, interactive designer, bournemouth, dorset, united kingdom">
-		<meta name="author" content="Benlly cast">-->
-
-		<!-- STYLESHEETS -->
+		-->
+        
+        <!-- ========================== FAVICON ==============================-->
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+	    
+	    <!-- ========================== CSS ==============================-->
 		<!--
 		<link rel="stylesheet" href="css/style.css"  media="screen" />
 		<link rel="stylesheet" href="css/flexslider.css" media="screen" />
 		<link rel="stylesheet" href="css/responsive.css" media="screen" />
 		-->
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
 
-		<!-- SCRIPTS -->
+        <!-- ========================== JS SCRIPTS ==============================-->
+		<script src="js/vendor/modernizr-2.6.2.min.js"></script>
 		<!--
 		<script src="js/jquery-1.7.2.js"></script>
 		<script src="js/modernizer.js"></script>
@@ -32,13 +56,17 @@
 		<script defer src="js/jquery.jribbble-1.0.0.ugly.js"></script>
 		<script src="js/scripts.js"></script>
 		-->
-		<title>titulo de pagina</title>
-		<link rel="stylesheet" type="text/css" href="web_page/static/estilos.css">
-		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-		<script type="text/javascript" src="web_page/static/demo.js"></script>
-		<meta charset="utf-8">
+        
+
+
 	</head>
 	<body>
+		<!-- ========================== Actualizar IE > 7 :( ==============================-->
+		<!--[if lt IE 7]>
+            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+        <![endif]-->
+
+        <!-- Add your site or application content here -->
 		<!-- cabezera principal de la pagina-->
 		<div id="envoltura-header">
 			<header id="header">
@@ -95,24 +123,77 @@
 							<li class="item"><a href="#" title="PYTHON">Python</a></li>
 						</ul>
 					</div>
+					<div id="right-sidebar">
+						<ul>
+							<li>
+								<h3>Contenido Medio</h3>
+								<p> Lorem ipsum dolor sit amet.</p>
+							</li>
+							<li>
+								<h3>Contenido Medio</h3>
+								<p> Lorem ipsum dolor sit amet.</p>
+							</li>
+							<li>
+								<h3>Contenido Medio</h3>
+								<p> Lorem ipsum dolor sit amet.</p>
+							</li>
+							<li>
+								<h3>Contenido Medio</h3>
+								<p> Lorem ipsum dolor sit amet.</p>
+							</li>
+						</ul>
+						
+					</div>
 					<div id="center-content">
-						<h2>contenido principal</h2>
-						<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-						proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+						<!--<div class="wraper-article">-->
+							<div class="article">
+								<h2>contenido principal</h2>
+								<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+								quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+								consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+								cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+								proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+							</div>
+							<div class="article">
+								<h2>contenido principal</h2>
+								<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+								quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+								consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+								cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+								proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+							</div>	
+							<div class="article">
+								<h2>contenido principal</h2>
+								<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+								quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+								consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+								cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+								proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+							</div>	
+							<div class="article">
+								<h2>contenido principal</h2>
+								<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+								quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+								consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+								cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+								proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+							</div>	
+							<div class="article">
+								<h2>contenido principal</h2>
+								<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+								quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+								consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+								cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+								proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+							</div>
+						<!--</div>-->
 					</div>
-					<div id="right-sidebar" class="sidebar">
-						<h2>Contenido Medio</h2>
-						<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-					</div>
+					
 				</div>
 				<!--contenido central inferior-->
 				<div id="content-in-inf">
@@ -128,5 +209,22 @@
 		</section>
 		<!--footer de la pagina-->
 		<footer><p>footer del documento</p></footer>
+		
+		<!-- ========================== Instalacion de Plugin adicionales de JQUERY ==============================-->
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.8.3.min.js"><\/script>')</script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+
+        <!-- ========================== Google Analitics ==============================-->
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <!--
+        <script>
+            var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+            g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+            s.parentNode.insertBefore(g,s)}(document,'script'));
+        </script>
+    	-->
 	</body>
 </html>

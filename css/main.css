@@ -93,20 +93,232 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+#envoltura-header{
+    width: 100%;
+    height: auto;
+}
+
+#header {
+    background-color: #88ff33;
+    border: 2px solid gray;
+    height: auto;
+    width: 960px;
+    margin:  0 auto;
+    padding: 3px 3px;
+}
+
+    #header-logo{
+        display: inline-block;
+    }
+        #header-logo img{
+            height: 100px;
+            width: 100px;
+            background-color: #ff0000;
+            display: inline-block;
+        }
+
+    #header-menu-search{
+        display: inline-block;
+        float: right;
+    }
+        #envoltura-buscador{
+            display: inline-block;/* para evitar que en un float sobresalga de la caja, hacer el padre inline-block*/
+            width: 100%;
+        }
+            #buscador{
+                float: right;
+            }
+
+        #menu-pagina{
+            width: auto;
+            height: auto;
+        }
+
+            #menu-pagina ul{
+                list-style: none none;
+                height: auto;
+                width: 100%;
+            }
+                #menu-pagina ul li:first-child{
+                    border-radius: 5px 0 0 5px; 
+                    -webkit-border-radius: 5px 0 0 5px;
+                    -moz-border-radius: 5px 0 0 5px; 
+                    -o-border-radius: 5px 0 0 5px;
+                    -ms-border-radius: 5px 0 0 5px;
+                }
+                #menu-pagina ul li:last-child{
+                    border-radius: 0 5px 5px 0; 
+                    -webkit-border-radius: 0 5px 5px 0;
+                    -moz-border-radius: 0 5px 5px 0; 
+                    -o-border-radius: 0 5px 5px 0;
+                    -ms-border-radius: 0 5px 5px 0;
+                }
+                #menu-pagina ul li{
+                    display: block;
+                    list-style: none none;
+                    float: left;
+                    background: #a90329; /* Old browsers */
+                    background: -moz-linear-gradient(top,  #a90329 0%, #8f0222 44%, #6d0019 100%); /* FF3.6+ */
+                    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#a90329), color-stop(44%,#8f0222), color-stop(100%,#6d0019)); /* Chrome,Safari4+ */
+                    background: -webkit-linear-gradient(top,  #a90329 0%,#8f0222 44%,#6d0019 100%); /* Chrome10+,Safari5.1+ */
+                    background: -o-linear-gradient(top,  #a90329 0%,#8f0222 44%,#6d0019 100%); /* Opera 11.10+ */
+                    background: -ms-linear-gradient(top,  #a90329 0%,#8f0222 44%,#6d0019 100%); /* IE10+ */
+                    background: linear-gradient(to bottom,  #a90329 0%,#8f0222 44%,#6d0019 100%); /* W3C */
+                    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a90329', endColorstr='#6d0019',GradientType=0 ); /* IE6-9 */                
+                    border: 1px solid gray;
+                    /*padding: 1em 1em; mantener margenes internos por palabra*/
+                }
+
+                    #menu-pagina ul li a{
+                        font: normal 0.85em arial;
+                        text-decoration: none ;
+                        text-transform: uppercase;
+                        color: white;
+                        text-shadow: 1px 1px 1px black;
+                        display: block;
+                        margin: 1em;
+                    }
+                    #menu-pagina ul li a:hover{
+                        color: peru;
+                        font-weight: bold;
+                    }
 
 
 
+#content{
+    width: 100%;
+    height: auto;   
+}
 
+    #content-in {
+        height: auto;
+        width: 960px;
+        background-color: #555588;
+        margin: 0 auto;
+    }
 
+        #content-in-sup{
+            background-color: #ccc;
+        }
+        
+            #wraper-menu h3{
+                font-size: large;
+                color: blue;
+            }
+        
+            #content-in-sup h3{
+                font-family: verdana, arial;
+                font-size: 18px;
+                display: inline-block;
+            }
 
+            #content-menu{
+                margin: 2px auto;
+                border: 1px solid green;                
+                display: inline-block;
+            }
+            
 
+            #content-menu ul{
+                padding: 2px 2px                
+            }
+                #content-menu ul li{
+                    background-color: yellow;
+                    border-radius: 5px 5px 0 0;
+                    display: inline-block;
+                    font-family: arial;
+                    font-size: 15px;
+                    font-style: normal;
+                    height: 20px;
+                    margin: 5px 1px;
+                    text-align: center;
+                    width: 50px;
+                }
+        #content-in-med{
+            background-color: #fff;
+        }
 
+            #left-sidebar{
+                /*border: 1px solid black;*/
+                display: block;
+                float: left;
+                width: auto;
+            }
+                #left-sidebar ul{
+                    display: inline-block;
+                    padding: 1.7em 0 1.7em 0.2em;
+                }
+                    #left-sidebar ul li{
+                        list-style-type: none;                  
+                        background: -webkit-linear-gradient(top, #1e5799 0%,#2989d8 50%,#207cca 51%,#7db9e8 100%);
+                        background: -moz-linear-gradient(top, #1e5799 0%,#2989d8 50%,#207cca 51%,#7db9e8 100%);
+                        background: -o-linear-gradient(top, #1e5799 0%,#2989d8 50%,#207cca 51%,#7db9e8 100%);
+                        background: -ms-linear-gradient(top, #1e5799 0%,#2989d8 50%,#207cca 51%,#7db9e8 100%);
+                        margin-top: -10px;
+                        padding: 10px 5px;
+                        width: 85px;
+                        position: relative;
+                        border: 1px solid black;
+                        border-radius: 10px 0;
+                        box-shadow: -3px -3px 1px #aaa;
+                        opacity: 0.8;
+                        transform: skew(-6deg,-15deg);
+                        -ms-transform: skew(-6deg,-15deg); 
+                        -webkit-transform: skew(-6deg,-15deg); 
+                        -o-transform: skew(-6deg,-15deg);
+                        -moz-transform: skewX(-6deg) skewY(-15deg);
+                    }
 
+                    #left-sidebar ul li:hover{
+                        font: bold 1em arial;
+                        text-shadow: -1px -1px 2px #000;
+                        -webkit-text-shadow: -1px -1px 2px #000;
+                        -moz-text-shadow: -1px -1px 2px #000;
+                        -o-text-shadow: -1px -1px 2px #000;
+                        -ms-text-shadow: -1px -1px 2px #000;
+                        opacity: 1;
+                        margin-top: -20px;
+                        margin-bottom: 10px;
+                    }
 
+                        #left-sidebar ul li a{
+                            font: bold 1em arial;
+                            text-decoration: none;
+                            width: 100%;
+                            height: 100%;
+                            color: white;
+                        }
 
+                        #left-sidebar ul li a:hover{
+                            text-shadow: -1px -1px 2px #000;
+                        }
 
+                
+            #center-content{
+                width: 70%;
+                margin: 0 auto;
+                display:block;
+            }
 
+            #right-sidebar{     
+                width: 15%;
+                /*display:inline-block;*/
+                float: right;
+            }
+                #right-sidebar ul{
 
+                }
+                    #right-sidebar ul li{
+                        list-style: none;
+                    }
+                        #right-sidebar ul li h2{
+                            margin: 0px auto;
+                        }
+
+footer {
+    width: 960px;
+    margin: 0 auto;
+}
 
 
 /* ==========================================================================
