@@ -21,6 +21,7 @@ textarea {
 body {
     font-size: 1em;
     line-height: 1.4;
+    background-color: #333333;
 }
 
 /*
@@ -99,12 +100,23 @@ textarea {
 }
 
 #header {
-    background-color: #88ff33;
-    border: 2px solid gray;
+    background: #212121; /* Old browsers */
+    background: -moz-linear-gradient(top,  #212121 2%, #4c4c4c 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(2%,#212121), color-stop(100%,#4c4c4c)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #212121 2%,#4c4c4c 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #212121 2%,#4c4c4c 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #212121 2%,#4c4c4c 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #212121 2%,#4c4c4c 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#212121', endColorstr='#4c4c4c',GradientType=0 ); /* IE6-9 */
+
+    border: 1px solid black;
     height: auto;
     width: 960px;
     margin:  0 auto;
-    padding: 3px 3px;
+    padding: 10px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
 }
 
     #header-logo{
@@ -120,14 +132,31 @@ textarea {
     #header-menu-search{
         display: inline-block;
         float: right;
+        margin: 0 10px;
     }
         #envoltura-buscador{
             display: inline-block;/* para evitar que en un float sobresalga de la caja, hacer el padre inline-block*/
             width: 100%;
+            color: white;
         }
             #buscador{
                 float: right;
             }
+                .input-search{
+                    border-style: none;
+                    border-color: black;
+                    border-radius: 10px 0;
+                    box-shadow: inset 2px 2px 15px 5px rgba(0, 0, 0, 0.2);
+                    -webkit-box-shadow: inset 2px 2px 15px 5px rgba(0, 0, 0, 0.2);
+                    -moz-box-shadow: inset 2px 2px 15px 5px rgba(0, 0, 0, 0.2);
+                    -o-box-shadow: inset 2px 2px 15px 5px rgba(0, 0, 0, 0.2);
+                    -ms-box-shadow: inset 2px 2px 15px 5px rgba(0, 0, 0, 0.2);                    
+
+                    padding: 3px 5px;
+                }
+                .button-search{
+                    border-radius: 10px 0;
+                }
 
         #menu-pagina{
             width: auto;
@@ -165,7 +194,7 @@ textarea {
                     background: -ms-linear-gradient(top,  #a90329 0%,#8f0222 44%,#6d0019 100%); /* IE10+ */
                     background: linear-gradient(to bottom,  #a90329 0%,#8f0222 44%,#6d0019 100%); /* W3C */
                     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a90329', endColorstr='#6d0019',GradientType=0 ); /* IE6-9 */                
-                    border: 1px solid gray;
+                    border: 1px solid black;
                     /*padding: 1em 1em; mantener margenes internos por palabra*/
                 }
 
