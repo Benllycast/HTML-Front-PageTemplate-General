@@ -313,53 +313,31 @@ textarea {
 
 #content{
     width: 100%;
-    height: auto;   
+    height: auto;
+    margin: 1em 0;
+    
 }
 
     #content-in {
-        height: auto;
         width: 960px;
-        background-color: #555588;
         margin: 0 auto;
+        background-color: white;
+        -webkit-box-shadow:  0px 8px 15px 5px #222;
+        -moz-box-shadow:  0px 8px 15px 5px #222;
+        -o-box-shadow:  0px 8px 15px 5px #222;
+        -ms-box-shadow:  0px 8px 15px 5px #222;
+        box-shadow:  0px 8px 15px 5px #222;
     }
 
         #content-in-sup{
-            background-color: #ccc;
+          background-color: transparent;
         }
-        
-            #wraper-menu h3{
-                font-size: large;
-                color: blue;
-            }
-        
-            #content-in-sup h3{
-                font-family: verdana, arial;
-                font-size: 18px;
-                display: inline-block;
-            }
-
-            #content-menu{
-                margin: 2px auto;
-                border: 1px solid green;                
-                display: inline-block;
-            }
             
-
-            #content-menu ul{
-                padding: 2px 2px                
-            }
-                #content-menu ul li{
-                    background-color: yellow;
-                    border-radius: 5px 5px 0 0;
-                    display: inline-block;
-                    font-family: arial;
-                    font-size: 15px;
-                    font-style: normal;
-                    height: 20px;
-                    margin: 5px 1px;
-                    text-align: center;
-                    width: 50px;
-                }
+        #wraper-slider{
+          display: block;
+          width: 100%;
+          height: 10em;
+        }
         #content-in-med{
             background-color: #fff;
         }
